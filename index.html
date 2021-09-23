@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+    <title>Estadisticas COVID 19</title>
+  </head>
+  <body>
+    <body>
+        <div class="contenedor">
+         <div class="card border-primary mb-3" id="titulo" style="max-width: 40rem;">
+            <div class="card-body text-primary">
+              <h1 class="card-title">Estadisticas COVID 19</h1>
+            </div>
+          </div>
+            <b>Fecha</b> <input id="inputFecha" type="date" /> <br /> <br />
+            <b>Pais</b>
+            <select id="selectPais">
+                <option value="Spain">España</option>
+                <option value="Italy">Italia</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Chile">Chile</option>
+                <option value="Peru">Peru</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Germany">Alemania</option>
+            </select>
+            <br />
+            <br />
+            <button type="button" class="btn btn-danger" id="btnCargar">Consultar Estadisticas</button>
+            <br />
+            <br/>
+
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Confirmado: <span id="today_confirmed"></span></li>
+                <li class="list-group-item">Muertes: <span id="today_deaths"></span></li>
+                <li class="list-group-item">Pacientes hospitalizados con síntomas: <span id="today_hospitalised_patients_with_symptoms"></span></li>
+                <li class="list-group-item">Cuidados intensivos: <span id="today_intensive_care"></span></li>
+                <li class="list-group-item">Nuevo confirmado: <span id="today_new_confirmed"></span></li>
+                <li class="list-group-item">Nuevas muertes: <span id="today_new_deaths"></span></li>
+                <li class="list-group-item">Nuevos pacientes hospitalizados con sintomas: <span id="today_new_hospitalised_patients_with_symptoms"></span></li>
+                <li class="list-group-item">Nuevo cuidado intensivo: <span id="today_new_intensive_care"></span></li>
+                <li class="list-group-item">Nuevos casos abiertos: <span id="today_new_open_cases"></span></li>
+                <li class="list-group-item">Nuevo recuperado: <span id="today_new_recovered"></span></li>
+                <li class="list-group-item">Nuevos total de pacientes hospitalizados: <span id="today_new_total_hospitalised_patients"></span></li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+        <script src="script.js"></script>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

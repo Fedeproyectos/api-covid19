@@ -1,0 +1,26 @@
+.contenedor {
+    border: 2px dashed #DDD;
+    padding: 25px 20px;
+    border-radius: 25px;
+    background-color: #b9ffe1;
+    color: #002d2c;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 550px;
+    margin: auto;
+    
+}
+
+body {
+    background-color: #000000;
+}
+
+#titulo{
+    text-align: center;
+}
+
+
+@media (width){
+    body{
+        width: auto;
+    }
+}
